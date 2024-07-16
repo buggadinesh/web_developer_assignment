@@ -711,7 +711,74 @@ body {
 }
 
 .ima .kk {
-    animation: zoo 30s ease infinite ;
+    animation: zoo 30s ease infinite;
+}
+
+.dot {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: absolute;
+    top: 940px;
+    left: 375px;
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.circle{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: absolute;
+    top: 937px;
+    left: 365px;
+    width: 32px;
+    height: 32px;
+    opacity: 1;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 2;
+    animation:z 30s ease infinite;
+}
+@keyframes z {
+    0% {
+        translate: 0%;
+    }
+
+    10% {
+        translate: 85%;
+    }
+
+    20% {
+        translate: 170%;
+    }
+
+    30% {
+        translate: 255%;
+    }
+
+    50% {
+        translate: 0%;
+    }
+
+    60% {
+        translate: 0%;
+ 
+    }
+
+    70% {
+        translate: 85%;
+    }
+
+    80% {
+        translate: 170%;
+    }
+
+    100% {
+        translate: 255%;
+    }
 }
 
 @keyframes zoo {
@@ -720,19 +787,19 @@ body {
     }
 
     10% {
-        translate: -100%;
+        translate: 100%;
     }
 
     20% {
-        translate: -200%;
+        translate: 200%;
     }
 
     30% {
-        translate: -300%;
+        translate: 300%;
     }
 
     50% {
-        translate: -400%;
+        translate: 400%;
     }
 
     60% {
